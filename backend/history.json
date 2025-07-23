@@ -1,0 +1,218 @@
+[
+  {
+    "input": {
+      "uid": "NeP7Oi2ye5WL77aB3Dr4qo2lknp1",
+      "structured": {
+        "stipend": 0,
+        "has_mentor": false,
+        "tasks_difficulty": "Medium",
+        "contact_mode": "Email",
+        "certificate_only": false,
+        "asks_for_money": false,
+        "red_flags": 4
+      },
+      "text": {
+        "description": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025",
+        "offer_letter_text": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025"
+      }
+    },
+    "result": {
+      "prediction": "Real",
+      "confidence": 54.0
+    }
+  },
+  {
+    "input": {
+      "uid": "NeP7Oi2ye5WL77aB3Dr4qo2lknp1",
+      "structured": {
+        "stipend": 0,
+        "has_mentor": false,
+        "tasks_difficulty": "Medium",
+        "contact_mode": "LinkedIn",
+        "certificate_only": false,
+        "asks_for_money": false,
+        "red_flags": 4
+      },
+      "text": {
+        "description": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025",
+        "offer_letter_text": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025"
+      }
+    },
+    "result": {
+      "prediction": "Real",
+      "confidence": 54.0
+    }
+  },
+  {
+    "input": {
+      "uid": "NeP7Oi2ye5WL77aB3Dr4qo2lknp1",
+      "structured": {
+        "stipend": 0,
+        "has_mentor": false,
+        "tasks_difficulty": "Very Low",
+        "contact_mode": "WhatsApp",
+        "certificate_only": true,
+        "asks_for_money": true,
+        "red_flags": 4
+      },
+      "text": {
+        "description": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025",
+        "offer_letter_text": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025"
+      }
+    },
+    "result": {
+      "prediction": "Real",
+      "confidence": 53.0
+    }
+  },
+  {
+    "input": {
+      "uid": "NeP7Oi2ye5WL77aB3Dr4qo2lknp1",
+      "structured": {
+        "stipend": 14998,
+        "has_mentor": false,
+        "tasks_difficulty": "Medium",
+        "contact_mode": "WhatsApp",
+        "certificate_only": true,
+        "asks_for_money": true,
+        "red_flags": 4
+      },
+      "text": {
+        "description": "\ud83c\udf89 Congratulations!\n\nYou have been selected for a **Virtual Internship** at TechVision Pvt. Ltd. as a Data Science Intern. This is a work-from-home opportunity with flexible hours. No interview or technical test required!\n\n\ud83d\udd39 Stipend: \u20b915,000/month  \n\ud83d\udd39 Duration: 3 months  \n\ud83d\udd39 Perks: Certificate, LOR, and PPO  \n\ud83d\udd39 You must pay a refundable \u20b9999 registration fee to confirm your spot.  \n\nPlease pay via UPI to: techvision123@upi  \nReply \u201cYES\u201d to confirm your seat. Limited slots available!\n",
+        "offer_letter_text": "\ud83c\udf89 Congratulations!\n\nYou have been selected for a **Virtual Internship** at TechVision Pvt. Ltd. as a Data Science Intern. This is a work-from-home opportunity with flexible hours. No interview or technical test required!\n\n\ud83d\udd39 Stipend: \u20b915,000/month  \n\ud83d\udd39 Duration: 3 months  \n\ud83d\udd39 Perks: Certificate, LOR, and PPO  \n\ud83d\udd39 You must pay a refundable \u20b9999 registration fee to confirm your spot.  \n\nPlease pay via UPI to: techvision123@upi  \nReply \u201cYES\u201d to confirm your seat. Limited slots available!\n"
+      }
+    },
+    "result": {
+      "prediction": "Fake",
+      "confidence": 51.0
+    }
+  },
+  {
+    "input": {
+      "uid": "NeP7Oi2ye5WL77aB3Dr4qo2lknp1",
+      "structured": {
+        "stipend": 150000,
+        "has_mentor": false,
+        "tasks_difficulty": "Medium",
+        "contact_mode": "WhatsApp",
+        "certificate_only": true,
+        "asks_for_money": true,
+        "red_flags": 4
+      },
+      "text": {
+        "description": "\ud83c\udf89 Congratulations!\n\nYou have been selected for a **Virtual Internship** at TechVision Pvt. Ltd. as a Data Science Intern. This is a work-from-home opportunity with flexible hours. No interview or technical test required!\n\n\ud83d\udd39 Stipend: \u20b915,000/month  \n\ud83d\udd39 Duration: 3 months  \n\ud83d\udd39 Perks: Certificate, LOR, and PPO  \n\ud83d\udd39 You must pay a refundable \u20b9999 registration fee to confirm your spot.  \n\nPlease pay via UPI to: techvision123@upi  \nReply \u201cYES\u201d to confirm your seat. Limited slots available!\n",
+        "offer_letter_text": "\ud83c\udf89 Congratulations!\n\nYou have been selected for a **Virtual Internship** at TechVision Pvt. Ltd. as a Data Science Intern. This is a work-from-home opportunity with flexible hours. No interview or technical test required!\n\n\ud83d\udd39 Stipend: \u20b915,000/month  \n\ud83d\udd39 Duration: 3 months  \n\ud83d\udd39 Perks: Certificate, LOR, and PPO  \n\ud83d\udd39 You must pay a refundable \u20b9999 registration fee to confirm your spot.  \n\nPlease pay via UPI to: techvision123@upi  \nReply \u201cYES\u201d to confirm your seat. Limited slots available!\n"
+      }
+    },
+    "result": {
+      "prediction": "Fake",
+      "confidence": 51.0
+    }
+  },
+  {
+    "input": {
+      "uid": "NeP7Oi2ye5WL77aB3Dr4qo2lknp1",
+      "structured": {
+        "stipend": 149998,
+        "has_mentor": false,
+        "tasks_difficulty": "Medium",
+        "contact_mode": "WhatsApp",
+        "certificate_only": true,
+        "asks_for_money": true,
+        "red_flags": 4
+      },
+      "text": {
+        "description": "\ud83c\udf89 Congratulations!\n\nYou have been selected for a **Virtual Internship** at TechVision Pvt. Ltd. as a Data Science Intern. This is a work-from-home opportunity with flexible hours. No interview or technical test required!\n\n\ud83d\udd39 Stipend: \u20b915,000/month  \n\ud83d\udd39 Duration: 3 months  \n\ud83d\udd39 Perks: Certificate, LOR, and PPO  \n\ud83d\udd39 You must pay a refundable \u20b9999 registration fee to confirm your spot.  \n\nPlease pay via UPI to: techvision123@upi  \nReply \u201cYES\u201d to confirm your seat. Limited slots available!\n",
+        "offer_letter_text": "\ud83c\udf89 Congratulations!\n\nYou have been selected for a **Virtual Internship** at TechVision Pvt. Ltd. as a Data Science Intern. This is a work-from-home opportunity with flexible hours. No interview or technical test required!\n\n\ud83d\udd39 Stipend: \u20b915,000/month  \n\ud83d\udd39 Duration: 3 months  \n\ud83d\udd39 Perks: Certificate, LOR, and PPO  \n\ud83d\udd39 You must pay a refundable \u20b9999 registration fee to confirm your spot.  \n\nPlease pay via UPI to: techvision123@upi  \nReply \u201cYES\u201d to confirm your seat. Limited slots available!\n"
+      }
+    },
+    "result": {
+      "prediction": "Fake",
+      "confidence": 51.0
+    }
+  },
+  {
+    "input": {
+      "structured": {
+        "stipend": 0,
+        "has_mentor": false,
+        "tasks_difficulty": "Very Low",
+        "contact_mode": "WhatsApp",
+        "certificate_only": true,
+        "asks_for_money": true,
+        "red_flags": 4
+      },
+      "text": {
+        "description": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025",
+        "offer_letter_text": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025"
+      }
+    },
+    "result": {
+      "prediction": "Real",
+      "confidence": 53.0
+    }
+  },
+  {
+    "input": {
+      "structured": {
+        "stipend": 10000,
+        "has_mentor": true,
+        "tasks_difficulty": "High",
+        "contact_mode": "WhatsApp",
+        "certificate_only": false,
+        "asks_for_money": false,
+        "red_flags": 4
+      },
+      "text": {
+        "description": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025",
+        "offer_letter_text": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025"
+      }
+    },
+    "result": {
+      "prediction": "Real",
+      "confidence": 54.0
+    }
+  },
+  {
+    "input": {
+      "structured": {
+        "stipend": 0,
+        "has_mentor": true,
+        "tasks_difficulty": "High",
+        "contact_mode": "WhatsApp",
+        "certificate_only": false,
+        "asks_for_money": false,
+        "red_flags": 4
+      },
+      "text": {
+        "description": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025",
+        "offer_letter_text": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025"
+      }
+    },
+    "result": {
+      "prediction": "Real",
+      "confidence": 54.0
+    }
+  },
+  {
+    "input": {
+      "structured": {
+        "stipend": 0,
+        "has_mentor": false,
+        "tasks_difficulty": "High",
+        "contact_mode": "WhatsApp",
+        "certificate_only": false,
+        "asks_for_money": false,
+        "red_flags": 4
+      },
+      "text": {
+        "description": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025",
+        "offer_letter_text": "Company: Google India Pvt. Ltd.  \nPosition: Software Engineering Intern \u2013 Summer 2025  \nLocation: Bangalore, India  \nDuration: 12 weeks (May to August)  \nStipend: Competitive\n\nResponsibilities:\n- Work on scalable backend systems and cloud infrastructure.\n- Collaborate with product and design teams.\n- Write clean and maintainable code with documentation.\n\nRequirements:\n\u2714 Currently pursuing B.Tech/M.Tech in CS or related field.  \n\u2714 Strong foundation in Data Structures and Algorithms.  \n\u2714 Experience with Python/Java and web technologies.\n\nHow to Apply:\n\u27a1 Apply via our official careers page: [https://careers.google.com](https://careers.google.com)  \nDeadline: August 15, 2025"
+      }
+    },
+    "result": {
+      "prediction": "Real",
+      "confidence": 54.0
+    }
+  }
+]
