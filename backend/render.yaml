@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: veri-job-backend
+    runtime: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://anugour1233:8SUoRLIwoSbf2GZo@cluster0.twtyzez.mongodb.net/VeriJobDB?retryWrites=true&w=majority
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: firebase-key.json

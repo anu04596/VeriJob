@@ -12,6 +12,12 @@ import traceback
 from flask_pymongo import PyMongo
 from datetime import datetime
 from pymongo import MongoClient
+import firebase_admin
+from firebase_admin import credentials
+
+cred = credentials.Certificate("firebase-key.json")
+firebase_admin.initialize_app(cred)
+
 
 # Flask app init
 app = Flask(__name__)
@@ -175,5 +181,5 @@ def predict():
         print(traceback.format_exc())  # Log full traceback for debugging
         return jsonify({"error": f"Prediction error: {str(e)}"}), 500
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=10000)
