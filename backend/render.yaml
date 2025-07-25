@@ -2,7 +2,10 @@ services:
   - type: web
     name: veri-job-backend
     runtime: python
-    buildCommand: ""
+    rootDir: backend
+    buildCommand: |
+      apt-get update && apt-get install -y ffmpeg
+      pip install -r requirements.txt
     startCommand: gunicorn app:app
     envVars:
       - key: MONGODB_URI
