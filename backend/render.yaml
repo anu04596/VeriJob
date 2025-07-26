@@ -5,6 +5,9 @@ services:
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
+    build:
+      environment:
+        pythonVersion: 3.10
     envVars:
       - key: MONGODB_URI
         value: mongodb+srv://anugour1233:8SUoRLIwoSbf2GZo@cluster0.twtyzez.mongodb.net/VeriJobDB?retryWrites=true&w=majority
