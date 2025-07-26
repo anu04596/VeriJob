@@ -13,7 +13,7 @@ from flask_pymongo import PyMongo
 from datetime import datetime
 from pymongo import MongoClient
 import firebase_admin
-from firebase_admin import credentials
+from firebase_admin import credentials, auth
 
 cred = credentials.Certificate("firebase-key.json")
 firebase_admin.initialize_app(cred)
@@ -44,6 +44,19 @@ def test_db():
 def home():
     return "✅ Fake Internship Detector API is running!"
 
+# Token verifier
+def verify_token():
+    auth_header = request.headers.get("Authorization")
+    if not auth_header:
+        return None
+    try:
+        id_token = auth_header.split("Bearer ")[-1]
+        decoded_token = auth.verify_id_token(id_token)
+        return decoded_token
+    except Exception as e:
+        print("Token verification error:", e)
+        return None
+    
 # Saving History
 @app.route("/history", methods=["GET"])
 def get_history():

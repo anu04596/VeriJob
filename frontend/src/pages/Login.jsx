@@ -13,15 +13,35 @@ const Login = () => {
     try {
       const res = await signInWithEmailAndPassword(auth, email, password);
       const user = res.user;
-      localStorage.setItem("user", JSON.stringify({
-        email: user.email,
-        uid: user.uid
-      }));
-      window.location.reload();
+
+      // 🔐 Get Firebase ID Token
+      const idToken = await user.getIdToken();
+
+      // ✅ Store securely if needed
+      localStorage.setItem(
+        "user",
+        JSON.stringify({
+          email: user.email,
+          uid: user.uid,
+        })
+      );
+      localStorage.setItem("token", idToken); // 🔐 store token separately
+
+      // Optional: Send token to backend for verification
+      await fetch("http://localhost:5000/api/protected-route", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${idToken}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ action: "login" }),
+      });
+
       window.dispatchEvent(new Event("storage"));
       navigate("/dashboard");
     } catch (err) {
       console.error("Login failed:", err.message);
+      alert("Login failed: " + err.message);
     }
   };
 

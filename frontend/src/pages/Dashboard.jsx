@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+  const user = JSON.parse(localStorage.getItem("user"));
+  const token = localStorage.getItem("token");
+
   const [text, setText] = useState("");
   const [stipend, setStipend] = useState(0);
   const [hasMentor, setHasMentor] = useState(false);
@@ -12,6 +17,7 @@ const Dashboard = () => {
   const [redFlags, setRedFlags] = useState(4);
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,7 +32,9 @@ const Dashboard = () => {
     try {
       const response = await fetch("http://127.0.0.1:5000/predict", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`,
+         },
         body: JSON.stringify({
           uid: user.uid,
           structured: {

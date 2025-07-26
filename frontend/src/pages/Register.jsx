@@ -9,26 +9,32 @@ const Register = () => {
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await createUserWithEmailAndPassword(auth, email, password);
-      const user = res.user;
+  e.preventDefault();
+  try {
+    const res = await createUserWithEmailAndPassword(auth, email, password);
+    const user = res.user;
 
-      localStorage.setItem(
-        "user",
-        JSON.stringify({
-          email: user.email,
-          uid: user.uid,
-          createdAt: new Date().toLocaleString(),
-        })
-      );
-      window.location.reload();
-      window.dispatchEvent(new Event("storage"));
-      navigate("/dashboard");
-    } catch (error) {
-      alert("Registration failed. " + error.message);
-    }
-  };
+    const idToken = await user.getIdToken(); // ✅ get token
+
+    // Store user info & token
+    localStorage.setItem(
+      "user",
+      JSON.stringify({
+        email: user.email,
+        uid: user.uid,
+        createdAt: new Date().toLocaleString()
+      })
+    );
+    localStorage.setItem("token", idToken); // ✅ store token separately
+
+    window.dispatchEvent(new Event("storage"));
+    navigate("/dashboard");
+
+  } catch (error) {
+    alert("Registration failed. " + error.message);
+  }
+};
+
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-10 bg-gradient-to-r from-blue-100 to-indigo-100">

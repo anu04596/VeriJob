@@ -4,27 +4,23 @@ import { motion } from "framer-motion";
 import jsPDF from "jspdf";
 
 const History = () => {
-  const user = JSON.parse(localStorage.getItem("user"));
   const [history, setHistory] = useState([]);
+  const user = JSON.parse(localStorage.getItem("user"));
+  const token = localStorage.getItem("token");
 
   useEffect(() => {
     const fetchHistory = async () => {
-      const user = JSON.parse(localStorage.getItem("user"));
-      if (!user) return;
-
-      try {
-        const response = await fetch(
-          `http://localhost:5000/history?uid=${user.uid}`
-        );
-        const data = await response.json();
-        setHistory(data);
-      } catch (err) {
-        console.error("Error fetching history:", err);
-      }
+      const res = await fetch(`http://localhost:5000/history?uid=${user.uid}`, {
+        headers: {
+          "Authorization": `Bearer ${token}`,
+        },
+      });
+      const data = await res.json();
+      setHistory(data);
     };
 
     fetchHistory();
-  }, []);
+  }, [user.uid, token]);
 
   const downloadPDF = () => {
     const doc = new jsPDF();
@@ -72,7 +68,9 @@ const History = () => {
   try {
     await fetch("http://127.0.0.1:5000/delete_history", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json",
+        "Authorization": `Bearer ${token}`,
+       },
       body: JSON.stringify({
         uid: user.uid,
         timestamp: timestamp // send as number (not string or formatted date)
