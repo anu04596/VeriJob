@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from './config';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -30,7 +31,7 @@ const Dashboard = () => {
       return;
     }
     try {
-      const response = await fetch("http://127.0.0.1:5000/predict", {
+      const response = await fetch("${API_BASE_URL}/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json",
           "Authorization": `Bearer ${token}`,
