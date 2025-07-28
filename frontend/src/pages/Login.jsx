@@ -28,7 +28,7 @@ const Login = () => {
       localStorage.setItem("token", idToken); // 🔐 store token separately
 
       // Optional: Send token to backend for verification
-      await fetch("${BACKEND_URL}/api/protected-route", {
+      await fetch(`${BACKEND_URL}/api/protected-route`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${idToken}`,
