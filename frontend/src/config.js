@@ -1,3 +1,2 @@
-const API_BASE_URL = process.env.REACT_APP_API_URL;
-
-export default API_BASE_URL;
+// src/config.js
+export const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
