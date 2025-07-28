@@ -22,7 +22,7 @@ firebase_admin.initialize_app(cred)
 print("App is loading...")
 # Flask app init
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}}, headers="Content-Type")
+CORS(app, resources={r"/api/*": {"origins": "*"}}, headers="Content-Type")
 
 # ✅ MongoDB connection
 app.config["MONGO_URI"] = "mongodb+srv://anugour1233:8SUoRLIwoSbf2GZo@cluster0.twtyzez.mongodb.net/VeriJobDB?retryWrites=true&w=majority"
@@ -33,6 +33,11 @@ model = joblib.load("bert_hybrid_model.pkl")
 le_difficulty = joblib.load("le_difficulty.pkl")
 le_contact = joblib.load("le_contact.pkl")
 bert = SentenceTransformer("bert_model")  # Local BERT folder
+
+@app.route('/api/protected-route', methods=['GET', 'POST', 'OPTIONS'])
+@cross_origin()  # Or with specific config
+def protected_route():
+    return jsonify({"message": "Success!"})
 
 #Testing Database
 @app.route("/test-db")
