@@ -22,7 +22,7 @@ firebase_admin.initialize_app(cred)
 print("App is loading...")
 # Flask app init
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}}, headers="Content-Type")
 
 # ✅ MongoDB connection
 app.config["MONGO_URI"] = "mongodb+srv://anugour1233:8SUoRLIwoSbf2GZo@cluster0.twtyzez.mongodb.net/VeriJobDB?retryWrites=true&w=majority"
