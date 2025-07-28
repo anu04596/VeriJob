@@ -13,18 +13,11 @@ from flask_pymongo import PyMongo
 from datetime import datetime
 from pymongo import MongoClient
 import firebase_admin
-from firebase_admin import credentials, auth
+from firebase_admin import credentials
 
-firebase_key_base64 = os.environ.get("FIREBASE_KEY_BASE64")
-if firebase_key_base64:
-    firebase_json = base64.b64decode(firebase_key_base64).decode("utf-8")
-    with open("firebase-key.json", "w") as f:
-        f.write(firebase_json)
-    cred = credentials.Certificate("firebase-key.json")
-    firebase_admin.initialize_app(cred)
-else:
-    raise ValueError("FIREBASE_KEY_BASE64 env variable not set.")
+cred = credentials.Certificate("/etc/secrets/firebase-key.json")
 firebase_admin.initialize_app(cred)
+
 
 print("App is loading...")
 # Flask app init
