@@ -31,7 +31,7 @@ const Dashboard = () => {
       return;
     }
     try {
-      const response = await fetch("${API_BASE_URL}/predict", {
+      const response = await fetch(`${API_BASE_URL}/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json",
           "Authorization": `Bearer ${token}`,
