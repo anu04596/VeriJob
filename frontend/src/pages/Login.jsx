@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
-
+import { BACKEND_URL } from '../config';
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,7 +28,7 @@ const Login = () => {
       localStorage.setItem("token", idToken); // 🔐 store token separately
 
       // Optional: Send token to backend for verification
-      await fetch("http://localhost:5000/api/protected-route", {
+      await fetch("${BACKEND_URL}/api/protected-route", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${idToken}`,
