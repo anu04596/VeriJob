@@ -26,7 +26,7 @@ else:
     raise ValueError("FIREBASE_KEY_BASE64 env variable not set.")
 firebase_admin.initialize_app(cred)
 
-
+print("App is loading...")
 # Flask app init
 app = Flask(__name__)
 CORS(app)
