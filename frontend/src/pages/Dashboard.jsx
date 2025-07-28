@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import API_BASE_URL from './config';
+import { BACKEND_URL } from '../config';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -31,7 +31,7 @@ const Dashboard = () => {
       return;
     }
     try {
-      const response = await fetch(`${API_BASE_URL}/predict`, {
+      const response = await fetch(`${BACKEND_URL}/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json",
           "Authorization": `Bearer ${token}`,

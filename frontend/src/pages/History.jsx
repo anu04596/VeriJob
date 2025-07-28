@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
 import jsPDF from "jspdf";
-import API_BASE_URL from './config';
+import { BACKEND_URL } from '../config';
 
 const History = () => {
   const [history, setHistory] = useState([]);
@@ -11,7 +11,7 @@ const History = () => {
 
   useEffect(() => {
     const fetchHistory = async () => {
-      const res = await fetch(`${API_BASE_URL}/history?uid=${user.uid}`, {
+      const res = await fetch(`${BACKEND_URL}/history?uid=${user.uid}`, {
         headers: {
           "Authorization": `Bearer ${token}`,
         },
@@ -67,7 +67,7 @@ const History = () => {
 
   const deleteHistoryItem = async (timestamp) => {
   try {
-    await fetch(`${API_BASE_URL}/delete_history`, {
+    await fetch(`${BACKEND_URL}/delete_history`, {
       method: "POST",
       headers: { "Content-Type": "application/json",
         "Authorization": `Bearer ${token}`,
