@@ -33,6 +33,8 @@ model = joblib.load("bert_hybrid_model.pkl")
 le_difficulty = joblib.load("le_difficulty.pkl")
 le_contact = joblib.load("le_contact.pkl")
 bert = SentenceTransformer("bert_model")  # Local BERT folder
+bert.encode(["Hello world"])  # Warm-up to reduce first call latency
+
 
 @app.route('/api/protected-route', methods=['GET', 'POST', 'OPTIONS'])
 @cross_origin()  # Or with specific config
@@ -156,7 +158,7 @@ def predict():
 
         # Encode text
         full_text = input_text.get("description", "") + " " + input_text.get("offer_letter_text", "")
-        text_vector = bert.encode([full_text])
+        text_vector = bert.encode([full_text], show_progress_bar=False)
         X = np.hstack([struct_vector, text_vector])
 
         # Predict
