@@ -3,6 +3,7 @@ import os
 os.environ["USE_TF"] = "0"
 import base64
 from flask import Flask, request, jsonify
+from flask import make_response
 import numpy as np
 import joblib
 from sentence_transformers import SentenceTransformer
@@ -22,7 +23,11 @@ firebase_admin.initialize_app(cred)
 print("App is loading...")
 # Flask app init
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "*"}}, headers="Content-Type")
+# ✅ Allow Netlify frontend and support credentials + all methods
+CORS(app, resources={r"/api/*": {"origins": "https://verijob.netlify.app"}}, 
+     supports_credentials=True,
+     methods=["GET", "POST", "OPTIONS"],
+     allow_headers=["Content-Type", "Authorization"])
 
 # ✅ MongoDB connection
 app.config["MONGO_URI"] = "mongodb+srv://anugour1233:8SUoRLIwoSbf2GZo@cluster0.twtyzez.mongodb.net/VeriJobDB?retryWrites=true&w=majority"
@@ -37,8 +42,12 @@ bert.encode(["Hello world"])  # Warm-up to reduce first call latency
 
 
 @app.route('/api/protected-route', methods=['GET', 'POST', 'OPTIONS'])
-@cross_origin()  # Or with specific config
 def protected_route():
+    if request.method == "OPTIONS":
+        response = make_response()
+        response.status_code = 200
+        return response
+
     return jsonify({"message": "Success!"})
 
 #Testing Database
