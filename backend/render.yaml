@@ -4,7 +4,7 @@ services:
     runtime: python
     rootDir: backend
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    startCommand: gunicorn app:app --timeout 90 --bind 0.0.0.0:$PORT
     build:
       environment:
         pythonVersion: 3.10
